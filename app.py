@@ -5,7 +5,7 @@ import pickle
 from numpy import inf
 
 
-app = Flask(__name__,static_url_path = "/tmp", static_folder = "tmp")
+app = Flask(__name__,static_url_path = "/templates", static_folder = "templates")
 lr_model = pickle.load(open('lr.pkl','rb'))
 ridge_model = pickle.load(open('rr.pkl','rb'))
 lasso_model = pickle.load(open('lasso.pkl','rb'))
